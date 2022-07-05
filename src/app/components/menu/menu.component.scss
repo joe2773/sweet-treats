@@ -1,0 +1,23 @@
+.app-menu__title {
+    font-size: 24px;
+    font-weight: 800
+}
+
+
+.app-menu__menu-item-image {
+    max-width: 200px;
+    max-height: 200px
+}
+
+.app-menu__menu-container {
+    display: grid;
+    grid-row-gap: 25px;
+}
+
+.app-menu__menu-item {
+    display: flex;
+}
+
+.app-menu__menu-item-info {
+    padding-right: 25px;
+}

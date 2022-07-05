@@ -1,0 +1,27 @@
+<div
+    class="app-menu__menu-container">
+    <div
+        class="app-menu__title">
+        Menu
+    </div>
+    <div
+        class="app-menu__menu-item"
+        *ngFor="let menuItem of menu">
+    <div
+        class="app-menu__menu-item-info">
+        <div>
+            {{menuItem.name}}
+        </div>
+        <div>
+            {{menuItem.description}}
+        </div>
+        <div>
+            {{menuItem.price}}
+        </div>        
+    </div>   
+    <div>
+        <img
+            class="app-menu__menu-item-image" 
+            src = {{menuItem.imageUrl}}/>
+    </div>      
+</div>
