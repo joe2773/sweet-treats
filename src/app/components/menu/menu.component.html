@@ -1,28 +1,33 @@
 <div
-    class="app-menu__menu-container">
-    <div
-        class="app-menu__title">
-        Menu
-    </div>
+    class="app-menu__menu-title">
+    Menu
+</div>
+<div
+    class="app-menu__menu-item-container">
     <div
         class="app-menu__menu-item"
-        *ngFor="let menuItem of menu">
+        *ngFor="let menuItem of menu; let i = index">
     <div
-        class="app-menu__menu-item-info">
-        <div>
-            {{menuItem.name}}
-        </div>
-        <div>
-            {{menuItem.description}}
-        </div>
-        <div>
-            Price: ${{menuItem.price}}
-        </div>    
-            
-    </div>   
-    <div>
+        class="app-menu__info-image-container"
+        (click)="menuItemClicked(i)">
         <img
+            *ngIf="menuItem.shouldDisplay else menuText"
             class="app-menu__menu-item-image" 
             src = {{menuItem.imageUrl}}/>
+        <ng-template
+            #menuText>
+                <div
+                    class="app-menu__menu-item-info">
+                    <div>
+                        {{menuItem.name}}
+                    </div>
+                    <div>
+                        {{menuItem.description}}
+                    </div>
+                    <div>
+                        Price: ${{menuItem.price}}
+                    </div>    
+                </div>  
+        </ng-template>
     </div>      
 </div>

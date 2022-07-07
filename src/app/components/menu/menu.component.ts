@@ -16,4 +16,11 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.menu = this.menuService.CreateMenu();
   }
+
+  public menuItemClicked(index : number){
+    console.log(this.menu[index].shouldDisplay);
+    this.menu[index].shouldDisplay = !this.menu[index].shouldDisplay;
+    console.log(this.menu[index].shouldDisplay);
+  }
+
 }
