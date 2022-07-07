@@ -1,0 +1,5 @@
+services:
+  sweet-treats:
+    build: .
+    ports:
+      - "80:80"

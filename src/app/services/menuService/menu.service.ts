@@ -22,7 +22,7 @@ export class MenuService {
         name : 'Banana cupcake',
         description : 'this is a cupcake made with bananas, 340 cal 110g',
         price : 4.90,
-        imageUrl : '/assets/chocolate-cupcake.jpg',
+        imageUrl : '/assets/banana-cupcake.jpg',
         available : true,
         type : FoodType.CupCake
       },
