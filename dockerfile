@@ -6,4 +6,6 @@ RUN npm install
 RUN npm run build --prod
 #stage 2
 FROM nginx:alpine
+
+COPY nginx.conf /etc/nginx/conf.d/
 COPY --from=node /app/dist/sweet-treats /usr/share/nginx/html
