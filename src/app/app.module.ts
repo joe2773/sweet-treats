@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { MenuCardComponent } from './components/menu-card/menu-card.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactUsComponent,
     AboutUsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomePageComponent,
+    MenuCardComponent
   ],
   imports: [
     BrowserModule,
