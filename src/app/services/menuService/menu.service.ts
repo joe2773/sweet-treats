@@ -12,7 +12,8 @@ export class MenuService {
     return [
       Cakes.ChocolateCake,
       Cakes.VanillaCake,
-      Cakes.LemonCake
+      Cakes.LemonCake,
+      Cakes.CaramelCake
     ]
   }
 

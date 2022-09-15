@@ -4,21 +4,21 @@ import { MenuItem } from "src/app/model/MenuItem";
 export const ChocolateCake : MenuItem = {
     name: "Chocolate cake",
     price : 4.60,
-    imageUrl : '/assets/chocolate-cake.jpg',
+    imageUrl : '/assets/chocolate-cupcake.jpg',
     type : FoodType.Cake
 } 
 
 export const VanillaCake : MenuItem = {
     name: "Vanilla cake",
     price : 4.80,
-    imageUrl : '/assets/banana-cake.jpg',
+    imageUrl : '/assets/banana-cupcake.jpg',
     type : FoodType.Cake
 }
 
 export const RibbonCake : MenuItem = {
     name: "Ribbon cake",
     price : 4.80,
-    imageUrl : '/assets/ribbon-cake.jpg',
+    imageUrl : '/assets/ribbon-cupcake.jpg',
     type : FoodType.Cake
 }
 

@@ -1,1 +1,19 @@
-<p>menu-card works!</p>
+<div    
+    *ngIf="menuItem"
+    class="app-menu__info-image-container">
+    <div
+        #menuText>
+            <div
+                class="app-menu__menu-item-info">
+                <div>
+                    Name : {{menuItem.name}}
+                </div>
+                <div>
+                    {{menuItem.description}}
+                </div>
+                <div>
+                    Price: ${{menuItem.price}}
+                </div>    
+            </div>  
+        </div>
+</div>     

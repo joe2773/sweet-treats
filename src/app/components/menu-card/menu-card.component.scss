@@ -1,0 +1,15 @@
+
+.app-menu-item__container {
+    display: flex;  
+    width: 30%;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+.app-menu-item__info {
+    display: grid;
+    grid-row-gap: 5px;
+    text-align: center;
+    padding-top: 40%;
+    padding-bottom: 40%;
+}

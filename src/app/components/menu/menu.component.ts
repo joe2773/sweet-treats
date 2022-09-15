@@ -30,11 +30,4 @@ export class MenuComponent implements OnInit {
     //this.cakeSlabs = this.menuService.GetCakeSlabs();
   
   }
-
-  public menuItemClicked(index : number){
-    console.log(this.menu[index].shouldDisplay);
-    this.menu[index].shouldDisplay = !this.menu[index].shouldDisplay;
-    console.log(this.menu[index].shouldDisplay);
-  }
-
 }

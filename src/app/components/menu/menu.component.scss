@@ -16,22 +16,3 @@
     justify-content: space-evenly;
     grid-row-gap: 25px;
 }
-
-.app-menu__menu-item {
-    display: flex;  
-    width: 30%;
-    min-width: 250px;
-    min-height: 250px;
-}
-
-.app-menu__menu-item-info {
-    display: grid;
-    grid-row-gap: 5px;
-    text-align: center;
-    padding-top: 40%;
-    padding-bottom: 40%;
-}
-
-.app-menu__info-image-container { 
-    width: 100%;
-}
