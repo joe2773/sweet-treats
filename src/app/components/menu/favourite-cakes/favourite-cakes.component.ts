@@ -8,6 +8,7 @@ import { MenuItem } from 'src/app/model/MenuItem';
   styleUrls: ['./favourite-cakes.component.scss']
 })
 export class FavouriteCakesComponent implements OnInit {
+    @Input() public cakesType : string = "";
     @Input() public cakes : MenuItem[] = [];
     @Input() public cakesWithImage : MenuItem[] = [];
     constructor(

@@ -4,59 +4,39 @@
 </div>
 <h3
     class="app-menu__menu-header-text">
-    At Sweet treats using the finest and freshest ingredients we specialise in freshly baked homemade cakes, desserts, and other baked treats.
+    At Sweet treats, using the finest and freshest ingredients we specialise in freshly baked homemade cakes, desserts, and other baked treats.
     <p>For specific prices, 
         <a
             href="/contact">please enquire.
         </a></p>
 </h3>
 <app-favourite-cakes
+    cakesType="Favourite cakes"
     [cakes]="favouriteCakes"
     [cakesWithImage]="favouriteCakesWithImage">
 </app-favourite-cakes>
 <app-favourite-cakes
+    cakesType="Dessert cakes"
     [cakes]="dessertCakes"
     [cakesWithImage]="dessertCakesWithImage">
 </app-favourite-cakes>
 <app-favourite-cakes
+    cakesType="Signature cakes"
     [cakes]="signatureCakes"
     [cakesWithImage]="signatureCakesWithImage">
 </app-favourite-cakes>
-<app-cupcakes></app-cupcakes>
-<app-almond-tarts></app-almond-tarts>
-<app-brownies-and-blondes></app-brownies-and-blondes>
-<app-cake-slabs></app-cake-slabs>
-<app-other-products></app-other-products>
-<div
-    class="app-menu__signature-cakes">
-
-</div>
-
-<div
-    class="app-menu__desert-cakes">
-
-</div>
-<div
+<app-cupcakes
     class="app-menu__cupcakes">
-    
-</div>
-
-<div
+</app-cupcakes>
+<app-almond-tarts
     class="app-menu__almond-tarts">
-
-</div>
-
-<div
+</app-almond-tarts>
+<app-brownies-and-blondes
     class="app-menu__brownies-and-blondes">
-
-</div>
-
-<div
+</app-brownies-and-blondes>
+<app-cake-slabs
     class="app-menu__cake-slabs">
-
-</div>
-
-<div
+</app-cake-slabs>
+<app-other-products
     class="app-menu__other-products">
-
-</div>
+</app-other-products>
