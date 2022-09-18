@@ -1,0 +1,16 @@
+.app-favourite-cakes__cakes-with-image-container {
+    display: flex;
+}
+
+.app-favourite-cakes__cake {
+    display: grid;
+    padding-right: 5px;
+}
+.app-favourite-cakes__cake-image {
+    height: 250px;
+    width: 250px;
+}
+
+.app-favourite-cakes__cake-image-text {
+    text-align: center;
+}

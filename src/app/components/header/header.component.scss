@@ -19,3 +19,9 @@
 .app-header__link {
     text-decoration: none;
 }
+
+.app-header__introduction-text-container {
+    justify-content: center;
+    display: grid;
+    padding-bottom: 24px;
+}

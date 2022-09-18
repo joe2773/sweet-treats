@@ -8,26 +8,25 @@ import { MenuService } from 'src/app/services/menuService/menu.service';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  public menu : MenuItem[] = [];
   public dessertCakes : MenuItem[] = [];
+  public dessertCakesWithImage : MenuItem [] = [];
   public favouriteCakes : MenuItem[] = [];
+  public favouriteCakesWithImage : MenuItem [] = [];
   public signatureCakes : MenuItem[] = [];
-  public cupCakes : MenuItem[] = [];
-  public cakeSlabs : MenuItem[] = [];
+  public signatureCakesWithImage : MenuItem [] = [];
 
   constructor(
     private menuService : MenuService
   ) { }
     
   ngOnInit(): void {
-    this.menu = this.menuService.CreateMenu();
-
     this.dessertCakes = this.menuService.GetDessertCakes();
-    this.favouriteCakes = this.menuService.GetFavouriteCakes();
-    this.signatureCakes = this.menuService.GetSignatureCakes();
+    this.dessertCakesWithImage = this.menuService.GetDessertCakesWithImage();
 
-    //this.cupCakes = this.menuService.GetCupCakes();
-    //this.cakeSlabs = this.menuService.GetCakeSlabs();
-  
+    this.favouriteCakes = this.menuService.GetFavouriteCakes();
+    this.favouriteCakesWithImage = this.menuService.GetFavouriteCakesWithImage();
+
+    this.signatureCakes = this.menuService.GetSignatureCakes();  
+    this.signatureCakesWithImage = this.menuService.GetSignatureCakesWithImage();
   }
 }

@@ -1,0 +1,29 @@
+<h2>
+    Favourite cakes
+</h2>
+
+<div
+    class="app-favourite-cakes__cakes-with-image-container">
+    <div
+        class="app-favourite-cakes__cake"  
+        *ngFor = "let cakeWithImage of cakesWithImage">
+        
+        <img 
+            class="app-favourite-cakes__cake-image"
+            src = {{cakeWithImage.imageUrl}}/>
+        <div
+            class="app-favourite-cakes__cake-image-text">
+            {{cakeWithImage.name}}
+        </div>
+    </div>
+</div>
+
+
+<div
+    class="app-favourite-cakes__cakes-container"
+    *ngFor="let cake of cakes">
+    <li>
+        {{cake.name}}
+    </li>
+    
+</div>
