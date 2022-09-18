@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { MenuCardComponent } from './components/menu-card/menu-card.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MenuCardComponent } from './components/menu-card/menu-card.component';
     HeaderComponent,
     FooterComponent,
     HomePageComponent,
-    MenuCardComponent
+    MenuCardComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
