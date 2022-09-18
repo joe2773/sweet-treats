@@ -8,9 +8,9 @@ import { MenuComponent } from './components/menu/menu.component';
 
 
 const routes: Routes = [
-  { path: '', component : HomePageComponent },
-  { path: 'menu', component: MenuComponent },
-  { path: 'about-us', component: AboutUsComponent },
+  { path: '', component : MenuComponent },
+  { path: 'our-products', component: MenuComponent },
+  { path: 'our-story', component: AboutUsComponent },
   { path: 'contact', component : ContactUsComponent },
   { path: 'gallery', component : GalleryComponent }
 ];

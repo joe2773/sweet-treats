@@ -13,6 +13,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { MenuCardComponent } from './components/menu-card/menu-card.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { FavouriteCakesComponent } from './components/menu/favourite-cakes/favourite-cakes.component';
+import { CupcakesComponent } from './components/menu/cupcakes/cupcakes.component';
+import { AlmondTartsComponent } from './components/menu/almond-tarts/almond-tarts.component';
+import { BrowniesAndBlondesComponent } from './components/menu/brownies-and-blondes/brownies-and-blondes.component';
+import { CakeSlabsComponent } from './components/menu/cake-slabs/cake-slabs.component';
+import { OtherProductsComponent } from './components/menu/other-products/other-products.component';
 
 
 @NgModule({
@@ -25,7 +31,13 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     FooterComponent,
     HomePageComponent,
     MenuCardComponent,
-    GalleryComponent
+    GalleryComponent,
+    FavouriteCakesComponent,
+    CupcakesComponent,
+    AlmondTartsComponent,
+    BrowniesAndBlondesComponent,
+    CakeSlabsComponent,
+    OtherProductsComponent
   ],
   imports: [
     BrowserModule,

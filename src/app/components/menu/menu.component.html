@@ -1,13 +1,62 @@
 <div
     class="app-menu__menu-title">
-    Menu
+    Our products
+</div>
+<h3
+    class="app-menu__menu-header-text">
+    At Sweet treats using the finest and freshest ingredients we specialise in freshly baked homemade cakes, desserts, and other baked treats.
+    <p>For specific prices, 
+        <a
+            href="/contact">please enquire.
+        </a></p>
+</h3>
+<app-favourite-cakes
+    [cakes]="favouriteCakes"
+    [cakesWithImage]="favouriteCakesWithImage">
+</app-favourite-cakes>
+<app-favourite-cakes
+    [cakes]="dessertCakes"
+    [cakesWithImage]="dessertCakesWithImage">
+</app-favourite-cakes>
+<app-favourite-cakes
+    [cakes]="signatureCakes"
+    [cakesWithImage]="signatureCakesWithImage">
+</app-favourite-cakes>
+<app-cupcakes></app-cupcakes>
+<app-almond-tarts></app-almond-tarts>
+<app-brownies-and-blondes></app-brownies-and-blondes>
+<app-cake-slabs></app-cake-slabs>
+<app-other-products></app-other-products>
+<div
+    class="app-menu__signature-cakes">
+
+</div>
+
+<div
+    class="app-menu__desert-cakes">
+
 </div>
 <div
-    class="app-menu__menu-item-container">
-    <div
-        class="app-menu__menu-item"
-        *ngFor="let menuItem of menu; let i = index">
-    <app-menu-card
-        [menuItem]="menuItem">
-    </app-menu-card> 
+    class="app-menu__cupcakes">
+    
+</div>
+
+<div
+    class="app-menu__almond-tarts">
+
+</div>
+
+<div
+    class="app-menu__brownies-and-blondes">
+
+</div>
+
+<div
+    class="app-menu__cake-slabs">
+
+</div>
+
+<div
+    class="app-menu__other-products">
+
 </div>
