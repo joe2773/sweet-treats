@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("sweet-treats-355403-726e9473cea6.json")
+  credentials = file("sweet-treats-355403-1441446b74a9.json")
 
   project = var.project_id
   region  = var.region
@@ -22,19 +22,11 @@ resource "google_cloud_run_service" "sweet_treats" {
     spec {
       containers {
         image = "gcr.io/sweet-treats-355403/github.com/joe2773/sweet-treats@sha256:6a5f52fac5cf064e1ffa7867c912325724e6900a6c0233256fb59eaf319cefb8"
-        ports = [ 
-            {
-                "container_port" = "8080"
-            }]
-        }
       }
-      
+      }
     }
-
-  
-
    traffic {
-    percent         = 100
-    latest_revision = true
+      percent         = 100
+      latest_revision = true
   }
 }
